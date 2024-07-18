@@ -1,0 +1,106 @@
+IP,AlienVault Verdict,VirusTotal Verdict,MetaDefender Verdict,Overall Verdict,AV Match,VT Match,MD Match
+173.242.121.173,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+78.97.110.47,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+117.199.10.174,Not Malicious,Malicious,Not Malicious,Not Malicious,1,0,1
+91.109.188.4,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+217.165.164.110,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+91.109.190.5,Malicious,Malicious,Malicious,Malicious,1,1,1
+190.252.242.69,Malicious,Malicious,Malicious,Malicious,1,1,1
+91.109.182.8,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+91.109.176.7,Malicious,Malicious,Malicious,Malicious,1,1,1
+91.109.182.3,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+131.255.82.24,Not Malicious,Malicious,Malicious,Malicious,0,1,1
+117.199.12.148,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+86.98.145.152,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+91.109.190.8,Malicious,Malicious,Malicious,Malicious,1,1,1
+91.109.180.12,Possibly Malicious,Malicious,Malicious,Malicious,0,1,1
+183.136.213.96,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+119.147.145.198,Malicious,Malicious,Malicious,Malicious,1,1,1
+95.214.24.3,Not Malicious,Malicious,Not Malicious,Not Malicious,1,0,1
+2.88.95.162,Not Malicious,Not Malicious,Not Malicious,Not Malicious,1,1,1
+91.109.184.7,Malicious,Malicious,Malicious,Malicious,1,1,1
+82.65.203.216,Not Malicious,Malicious,Malicious,Malicious,0,1,1
+87.120.84.118,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+198.1.81.28,Not Malicious,Not Malicious,Not Malicious,Not Malicious,1,1,1
+91.109.178.8,Malicious,Malicious,Malicious,Malicious,1,1,1
+91.109.188.3,Malicious,Malicious,Malicious,Malicious,1,1,1
+151.80.9.113,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+5.2.75.93,Not Malicious,Malicious,Malicious,Malicious,0,1,1
+14.99.204.139,Not Malicious,Not Malicious,Not Malicious,Not Malicious,1,1,1
+84.46.252.7,Not Malicious,Malicious,Not Malicious,Not Malicious,1,0,1
+116.203.67.51,Not Malicious,Not Malicious,Not Malicious,Not Malicious,1,1,1
+95.80.175.176,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.173.236.123,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.37.138.179,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.37.167.168,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.235.112.20,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+95.32.73.28,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.168.107.19,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.86.215.118,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+95.233.29.90,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.155.49.249,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+94.21.120.255,Not Malicious,Not Malicious,Not Malicious,Not Malicious,1,1,1
+95.237.197.200,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+95.110.86.251,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+93.124.93.250,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+95.125.165.97,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+95.220.190.101,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.32.195.21,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+95.140.215.7,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+92.36.224.5,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+93.118.168.201,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+92.252.170.100,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+92.49.181.230,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+92.36.144.151,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+94.50.161.245,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+92.36.188.4,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+94.241.253.55,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+93.81.98.56,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+94.241.195.252,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+92.249.153.233,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+91.83.180.220,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+91.241.142.0,Not Malicious,Not Malicious,Not Malicious,Not Malicious,1,1,1
+92.248.180.60,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+92.81.222.217,Malicious,Malicious,Malicious,Malicious,1,1,1
+93.181.41.128,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+93.178.95.54,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+94.248.18.163,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+94.41.17.242,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+92.241.122.55,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+91.189.246.149,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+94.64.221.49,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+91.229.208.69,Malicious,Malicious,Malicious,Malicious,1,1,1
+90.188.102.124,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+88.252.92.100,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+89.214.58.109,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+89.109.46.75,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+89.109.198.250,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+87.5.93.208,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+84.46.246.236,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+87.4.83.20,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+90.150.203.82,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+89.178.212.162,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+91.138.66.143,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+87.5.52.103,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+84.51.85.58,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+84.46.243.248,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+89.254.252.71,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+89.254.238.172,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+89.146.162.46,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+87.117.11.11,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+87.20.115.157,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+87.116.229.214,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+85.14.31.38,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+83.242.255.253,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+83.30.139.240,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+83.30.100.7,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+84.224.223.109,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+83.11.14.37,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+85.105.25.190,Malicious,Malicious,Malicious,Malicious,1,1,1
+85.26.235.65,Malicious,Malicious,Not Malicious,Malicious,1,1,0
+83.4.115.7,Malicious,Not Malicious,Not Malicious,Not Malicious,0,1,1
+,,,,,46%,97%,74%
+,,,,,,,
+,,,,,,,
+not,13,58,85,,,,
+mal,87,42,15,,,,
