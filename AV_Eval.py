@@ -23,7 +23,7 @@ def get_ioc_stats(ip_address, api_key):
             print(f"No pulses found for IP address: {ip_address}")
             return None
 
-        # Define fields to check
+        # This defines fields for completeness
         fields_to_check = ['id', 'name', 'description', 'modified', 'created', 'tags', 'references', 'adversary',
                            'targeted_countries', 'malware_families', 'attack_ids', 'industries', 'cloned_from', 'groups']
 
