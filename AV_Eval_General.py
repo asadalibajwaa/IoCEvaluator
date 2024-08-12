@@ -133,8 +133,8 @@ def get_ioc_stats(indicator, indicator_type, api_key):
 
 # Replace with your AlienVault API key and input/output file paths
 ALIENVAULT_API_KEY = "your_alienvault_api_key"
-INPUT_FILE_PATH = "ip_add22.csv"
-OUTPUT_FILE_PATH = "av_output_stats.csv"
+INPUT_FILE_PATH = "IoC.csv"
+OUTPUT_FILE_PATH = "AV_output_stats.csv"
 
 # Read indicators from the CSV file without a header
 indicators = pd.read_csv(INPUT_FILE_PATH, header=None)[0].tolist()
