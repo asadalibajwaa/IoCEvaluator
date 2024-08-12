@@ -117,22 +117,20 @@ ALIENVAULT_API_KEY = "3b46a710c6ec819691528d1526764d8dd7ae82a2c96fc77fe45d6456ee
 INPUT_FILE_PATH = "ip_add22.csv"
 OUTPUT_FILE_PATH = "av_output_stats.csv"
 
-# Read IP addresses from the CSV file without a header
+# Read IP addresses from the CSV file. You can remove it if you want to give the IP addresses individually
 ip_addresses = pd.read_csv(INPUT_FILE_PATH, header=None)[0].tolist()
 
-# Store results in a list of dictionaries
+# Store results
 results_list = []
 
-# Get stats for each IP address
+# Get stats for IP address obtained from the provided CSV file
 for ip_address in ip_addresses:
     result = get_ioc_stats(ip_address, ALIENVAULT_API_KEY)
     if result is not None:
         results_list.append(result)
 
-# Create a DataFrame from the results list
-results_df = pd.DataFrame(results_list)
 
-# Save the results to a new CSV file
+results_df = pd.DataFrame(results_list)
 results_df.to_csv(OUTPUT_FILE_PATH, index=False)
 
 print("Results saved to:", OUTPUT_FILE_PATH)
