@@ -115,7 +115,7 @@ def get_ioc_stats(ip_address, api_key):
 # Replace with your AlienVault API key and input/output file paths
 ALIENVAULT_API_KEY = "3b46a710c6ec819691528d1526764d8dd7ae82a2c96fc77fe45d6456ee12bd3c"
 INPUT_FILE_PATH = "ip_add22.csv"
-OUTPUT_FILE_PATH = "av_output_stats.csv"
+OUTPUT_FILE_PATH = "av_output_stats_IP.csv"
 
 # Read IP addresses from the CSV file. You can remove it if you want to give the IP addresses individually
 ip_addresses = pd.read_csv(INPUT_FILE_PATH, header=None)[0].tolist()
