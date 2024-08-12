@@ -12,4 +12,4 @@ Run the file Weighted_Verdict_Genral.py to get Overall verdict for the IoCs (IP 
 This is for the test. Run the file Weighted_Verdict.py to get Overall verdict for the IoCs (IP addresses) saved in the ip_addresses_2.csv file. The results are saved in the ip_verdicts_2.csv file
 
 ## IoC Evaluation
-Run the files AV_Eval_General.py, VT_Eval_General.py, and MD_Eval_General.py to get the completeness, freshness, and relevance results for your IoCs. We also provide scripts soley for IP addresses evaluaiton in AV_Eval_.py, VT_Eval_General.py, and MD_Eval_General.py to 
+Run the files AV_Eval_General.py, VT_Eval_General.py, and MD_Eval_General.py to get the completeness, freshness, and relevance results for your IoCs. We also provide scripts solely for IP addresses evaluation in AV_Eval_IP.py, VT_Eval_IP.py, and MD_Eval_IP.py. 
