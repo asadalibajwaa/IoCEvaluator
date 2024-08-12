@@ -83,9 +83,9 @@ results = []
 for ip_address in df[0]:
     # API keys for the services
     print(ip_address)
-    alienvault_api_key = "3b46a710c6ec819691528d1526764d8dd7ae82a2c96fc77fe45d6456ee12bd3c"
-    virustotal_api_key = "4a35e71e00d2aa0a41b61443a1d002aaf0f8e7d1a44f3ff1c93c63233c7fe6a0"
-    metadefender_api_key = "256251102612f4174a6037e3b1fcad41"
+    alienvault_api_key = "AV_API_KEY"
+    virustotal_api_key = "VT_API_KEY0"
+    metadefender_api_key = "MD_API_KEY"
 
     # Get verdicts from each service
     alienvault_verdict = get_alienvault_verdict(ip_address, alienvault_api_key)
