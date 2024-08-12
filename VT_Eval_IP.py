@@ -94,7 +94,7 @@ def get_ioc_reputation(ioc, api_key):
         return None
 
 # Replace with your VirusTotal API key and input/output file paths
-VIRUSTOTAL_API_KEY = "4a35e71e00d2aa0a41b61443a1d002aaf0f8e7d1a44f3ff1c93c63233c7fe6a0"
+VIRUSTOTAL_API_KEY = "YOUR_VT_API_KEY"
 INPUT_FILE_PATH = "ip_add22.csv"
 OUTPUT_FILE_PATH = "VT_output_stats_IP.csv"
 
