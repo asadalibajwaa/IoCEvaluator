@@ -107,7 +107,7 @@ def process_ip_addresses(input_csv_path, output_csv_path, api_key):
 
 if __name__ == "__main__":
     input_csv_path = 'ip_add22.csv'  # Replace with your input CSV file path
-    output_csv_path = 'MD_output_stats.csv'  # Replace with your output CSV file path
+    output_csv_path = 'MD_output_stats_IP.csv'  # Replace with your output CSV file path
     api_key = '256251102612f4174a6037e3b1fcad41'  # Replace with your MetaDefender API key
 
     process_ip_addresses(input_csv_path, output_csv_path, api_key)
