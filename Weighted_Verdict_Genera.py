@@ -2,6 +2,8 @@ import requests
 import json
 import re
 import pandas as pd
+import base64
+from urllib.parse import quote
 
 # Function to determine the type of indicator
 def determine_indicator_type(indicator):
@@ -51,7 +53,12 @@ def get_virustotal_verdict(indicator, indicator_type, api_key):
     if not endpoint:
         return None
 
-    url = f'https://www.virustotal.com/api/v3/{endpoint}/{indicator}'
+    if indicator_type == "url":
+        url_id = base64.urlsafe_b64encode(indicator.encode()).decode().rstrip("=")
+        url = f'https://www.virustotal.com/api/v3/{endpoint}/{url_id}'
+    else:
+        url = f'https://www.virustotal.com/api/v3/{endpoint}/{indicator}'
+
     headers = {'x-apikey': api_key}
     response = requests.get(url, headers=headers)
 
@@ -77,8 +84,14 @@ def get_metadefender_verdict(indicator, indicator_type, api_key):
     endpoint = endpoint_map.get(indicator_type)
     if not endpoint:
         return None
-
-    url = f'https://api.metadefender.com/v4/{endpoint}/{indicator}'
+    
+    if indicator_type == "url":
+        # URL-encode the URL IoC
+        encoded_ioc = quote(indicator, safe='')
+        url = f'https://api.metadefender.com/v4/{endpoint}/{encoded_ioc}'
+    else:
+        url = f'https://api.metadefender.com/v4/{endpoint}/{indicator}'
+    
     headers = {'apikey': api_key}
     response = requests.get(url, headers=headers)
 
@@ -114,6 +127,7 @@ results = []
 
 for indicator in df[0]:
     print(indicator)
+    
     alienvault_api_key = "YOUR_AV_API_Key"
     virustotal_api_key = "YOUR_VT_API_Key"
     metadefender_api_key = "YOUR_MD_API_Key"
