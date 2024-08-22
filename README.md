@@ -13,3 +13,6 @@ This is for the test. Run the file Weighted_Verdict_IP.py to get Overall verdict
 
 ## IoC Evaluation
 Run the files AV_Eval_General.py, VT_Eval_General.py, and MD_Eval_General.py to get the completeness, freshness, and relevance results for your IoCs. We also provide scripts solely for IP addresses evaluation in AV_Eval_IP.py, VT_Eval_IP.py, and MD_Eval_IP.py. 
+
+## IoC Verdict Results
+We provide the verdicts for 100s of IoCs provided by 3 CTI platforms along with the weighted verdict in file IoC_verdicts.csv.
