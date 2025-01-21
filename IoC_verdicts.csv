@@ -1,4 +1,4 @@
-IoC	Type	AlienVault Verdict	VirusTotal Verdict	MetaDefender Verdict	Overall Verdict
+IoC,	Type,	AlienVault Verdict,	VirusTotal Verdict,	MetaDefender Verdict,	Overall Verdict
 173.242.121.173	IP	Malicious	Malicious	Not Malicious	Malicious
 78.97.110.47	IP	Malicious	Malicious	Not Malicious	Malicious
 117.199.10.174	IP	Not Malicious	Malicious	Not Malicious	Not Malicious
