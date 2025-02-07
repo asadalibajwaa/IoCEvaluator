@@ -116,11 +116,6 @@ def get_metadefender_verdict(indicator, indicator_type, api_key):
     else:
         return None
 
-# Weightage for verdicts (40% for AlienVault, 40% for VirusTotal, 20% for MetaDefender)
-alienvault_weight = 0.4
-virustotal_weight = 0.4
-metadefender_weight = 0.2
-
 # Read indicators from a CSV file
 df = pd.read_csv("IoC.csv", header=None)
 
@@ -140,18 +135,19 @@ for indicator in df[0]:
         continue
 
     # Get verdicts
-    alienvault_verdict = get_alienvault_verdict(indicator, indicator_type, alienvault_api_key)
-    virustotal_verdict = get_virustotal_verdict(indicator, indicator_type, virustotal_api_key)
-    metadefender_verdict = get_metadefender_verdict(indicator, indicator_type, metadefender_api_key)
+    alienvault_verdict, AV_source_count = get_alienvault_verdict(indicator, indicator_type, alienvault_api_key)
+    virustotal_verdict, VT_source_count = get_virustotal_verdict(indicator, indicator_type, virustotal_api_key)
+    metadefender_verdict, MD_source_count = get_metadefender_verdict(indicator, indicator_type, metadefender_api_key)
+
 
     # Weightage for verdicts
-    alienvault_weight = 0.4
-    virustotal_weight = 0.4
-    metadefender_weight = 0.2
-
+    alienvault_weight = AV_source_count / (AV_source_count + VT_source_count + MD_source_count)
+    virustotal_weight = VT_source_count / (AV_source_count + VT_source_count + MD_source_count)
+    metadefender_weight = MD_source_count / (AV_source_count + VT_source_count + MD_source_count)
+   
     # Weighted verdict
     weighted_verdict = (
-        alienvault_weight * (1 if alienvault_verdict == "Malicious" else 0) +
+        alienvault_weight * (1 if alienvault_verdict == "Malicious" else (0.5 if alienvault_verdict == "Possibly Malicious" else 0)) +
         virustotal_weight * (1 if virustotal_verdict == "Malicious" else 0) +
         metadefender_weight * (1 if metadefender_verdict == "Malicious" else 0)
     )
