@@ -33,11 +33,11 @@ def get_alienvault_verdict(indicator, indicator_type, api_key):
         general_info = response.json()
         pulse_count = general_info["pulse_info"]["count"]
         if pulse_count >= 2:
-            return "Malicious"
+            return "Malicious", pulse_count
         elif pulse_count == 1:
-            return "Possibly Malicious"
+            return "Possibly Malicious", pulse_count
         else:
-            return "Not Malicious"
+            return "Not Malicious", pulse_count
     else:
         return None
 
@@ -65,11 +65,12 @@ def get_virustotal_verdict(indicator, indicator_type, api_key):
     if response.status_code == 200:
         reputation_data = response.json()
         last_analysis_stats = reputation_data["data"]["attributes"]["last_analysis_stats"]
+        num_sources = sum(reputation_data["data"]["attributes"]["last_analysis_stats"].values())
         malicious_count = last_analysis_stats["malicious"]
         if malicious_count >= 1:
-            return "Malicious"
+            return "Malicious", num_sources
         else:
-            return "Not Malicious"
+            return "Not Malicious", num_sources
     else:
         return None
 
@@ -109,9 +110,9 @@ def get_metadefender_verdict(indicator, indicator_type, api_key):
                 malware_count += 1
 
         if malware_count >= 1:
-            return "Malicious"
+            return "Malicious", num_sources
         else:
-            return "Not Malicious"
+            return "Not Malicious", num_sources
     else:
         return None
 
@@ -142,6 +143,11 @@ for indicator in df[0]:
     alienvault_verdict = get_alienvault_verdict(indicator, indicator_type, alienvault_api_key)
     virustotal_verdict = get_virustotal_verdict(indicator, indicator_type, virustotal_api_key)
     metadefender_verdict = get_metadefender_verdict(indicator, indicator_type, metadefender_api_key)
+
+    # Weightage for verdicts
+    alienvault_weight = 0.4
+    virustotal_weight = 0.4
+    metadefender_weight = 0.2
 
     # Weighted verdict
     weighted_verdict = (
